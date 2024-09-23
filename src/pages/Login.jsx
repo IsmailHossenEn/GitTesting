@@ -1,9 +1,11 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
+import FacebookIcon from "@mui/icons-material/Facebook";
 import {
   Box,
   Button,
   Checkbox,
+  IconButton,
   Paper,
   Stack,
   TextField,
@@ -102,6 +104,58 @@ const Login = () => {
                 >
                   Sign Up
                 </Button>
+              </Stack>
+              <Stack textAlign={"center"}>
+                <Typography variant="h6">
+                  Or continue with these social profile
+                </Typography>
+                <Stack
+                  direction={"row"}
+                  gap={2}
+                  justifyContent={"center"}
+                  py={3}
+                >
+                  <IconButton
+                    color="primary"
+                    sx={{
+                      bgcolor: "#fff",
+
+                      boxShadow: "1px 1px 2px  #000",
+                      "&:hover": { bgcolor: "#faf3eb" },
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton
+                    color="primary"
+                    sx={{
+                      bgcolor: "#fff",
+
+                      boxShadow: "1px 1px 2px  #000",
+                      "&:hover": { bgcolor: "#faf3eb" },
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                  <IconButton
+                    color="primary"
+                    sx={{
+                      bgcolor: "#fff",
+
+                      boxShadow: "1px 1px 2px  #000",
+                      "&:hover": { bgcolor: "#faf3eb" },
+                    }}
+                  >
+                    <FacebookIcon />
+                  </IconButton>
+                </Stack>
+                <Typography variant="body1">
+                  Already a member?
+                  <span style={{ color: "#ff7901" }}>
+                    {" "}
+                    Click here to log in
+                  </span>
+                </Typography>
               </Stack>
             </Stack>
           </Paper>
